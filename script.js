@@ -15,17 +15,17 @@ fetch("https://restcountries.com/v3.1/all")
        
          cardContainer.innerHTML+=`
 
-         <div class="card" style="width: 18rem;">
+         
                              <h1 class="card-header">${name}</h1>
                              <img src="${image}" class="card-img-top" alt="flag">
-                             <div class="card-body">
+                             <div class="card-body countryDetails">
                                <p class="card-text">Capital:${capital}</p>
                                <p class="card-text">Region:${region}</p>
                                <p class="card-text">Country Code:${countryCode}</p>
                                <button class="btn btn-primary weatherButton" onclick="weather(${lat},${lon},${i})">Click for Weather</button>
                                <div id="weatherReport${i}"></div>
                              </div>
-                           </div>
+                           
           `
 
 
